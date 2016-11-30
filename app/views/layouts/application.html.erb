@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Boiler Plate</title>
+  <title>Silver Hand | Malcolm Gourdine's UI design + web development website</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= favicon_link_tag 'hand_logo_icon.png'%>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <%= yield %>
+</div>
+
+<div id="footer">
+  <div class="container">
+    <p>hello</p>
+  </div>
+</div>
+
+<p id="floater">Malcolm Gourdine &nbsp;&nbsp; <span style="color:#939393">Web Design + Development</span></p>
+
+<div id="sidebar" class="hidden-xs">
+  <%= image_tag("hand_logo.png", id:"hand-logo") %>
+  <p id="silver-hand">silver <br> hand</p>
+
+  <ul id="nav" class="navigation nav-right affix">
+    <li id="home">Home</li>
+    <li id="portfolio">Portfolio</li>
+    <li id="contact">Contact</li>
+  </ul>
+</div>
 
 </body>
 </html>
