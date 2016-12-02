@@ -13,12 +13,6 @@
   <%= yield %>
 </div>
 
-<div id="footer">
-  <div class="container">
-    <p>hello</p>
-  </div>
-</div>
-
 <p id="floater">Malcolm Gourdine &nbsp;&nbsp; <span style="color:#939393">Web Design + Development</span></p>
 
 <div id="sidebar" class="hidden-xs">
@@ -26,10 +20,25 @@
   <p id="silver-hand">silver <br> hand</p>
 
   <ul id="nav" class="navigation nav-right affix">
-    <li id="home">Home</li>
-    <li id="portfolio">Portfolio</li>
-    <li id="contact">Contact</li>
+    <li id="home">
+      <%= link_to 'Home', root_path, ({class: "active"} if current_page?(root_path))  %>
+    </li>
+
+    <li id="portfolio">
+      <%= link_to 'Portfolio', projects_path, ({class: "active"} if current_page?(projects_path))  %>
+    </li>
+
+    <li id="contact">
+      <%= link_to 'Contact', new_contact_path, ({class: "active"} if current_page?(new_contact_path))  %>
+    </li>
   </ul>
+</div>
+
+<div id="footer">
+  <div class="container">
+    <p id="footer-text">More Silver Hand</p>
+    <p></p>
+  </div>
 </div>
 
 </body>
