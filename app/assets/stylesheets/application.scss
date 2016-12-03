@@ -17,6 +17,7 @@
  @import "bootstrap";
  @import "projects";
  @import "home";
+ @import "font-awesome";
  @font-face {
    font-family: 'GreycliffCF';
    src: url('/assets/GreycliffCF-Bold.otf') format("truetype");
@@ -119,15 +120,38 @@
 }
 
 #footer-text {
-  margin-top: 70px;
+  margin-top: 60px;
   font-size: 14px;
-  color: #939393;
+  color: #757575;
   width: 90.5%;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #939393;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #757575;
+  display: inline-block;
 }
 
+#footer .container ul {
+  margin-top: 12px;
+  margin-left: -40px;
+}
 
+#footer .container ul li {
+  display: inline-block;
+  margin-right: 140px;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "Greycliff CF";
+  letter-spacing: 1px;
+}
+
+#footer .container ul li a {
+  color: #fdfdfd;
+}
+
+#footer .container ul li a:hover {
+  color: #6f6f6f;
+  background: none;
+  text-decoration: none;
+}
 
 .greycliff {
   font-family: 'GreycliffCF';
