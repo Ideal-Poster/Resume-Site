@@ -29,7 +29,6 @@ gem "figaro"
 # Font-Awesome supplies icons and emoticons
 gem "font-awesome-rails"
 
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -90,7 +90,7 @@
 }
 
 #nav li .active {
-  color: black;
+  color: #222222;
 }
 
 #nav li a {
@@ -100,7 +100,7 @@
 #nav li a:hover {
   text-decoration: none;
   background: none;
-  color: black;
+  color: #222222;
 }
 
 #contact {
@@ -114,13 +114,13 @@
 #footer {
   background-color: #373737;
   width: 100%;
-  height: 200px;
+  height: 160px;
   color: #FFFFFF;
   margin-top: 120px;
 }
 
 #footer-text {
-  margin-top: 60px;
+  margin-top:35px;
   font-size: 14px;
   color: #757575;
   width: 90.5%;
