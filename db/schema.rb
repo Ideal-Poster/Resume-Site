@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161125040116) do
+ActiveRecord::Schema.define(version: 20170106182056) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,15 @@ ActiveRecord::Schema.define(version: 20161125040116) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "images", force: :cascade do |t|
+    t.string   "file_id"
+    t.integer  "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "images", ["project_id"], name: "index_images_on_project_id", using: :btree
+
   create_table "projects", force: :cascade do |t|
     t.text     "title"
     t.text     "description"
@@ -32,4 +41,5 @@ ActiveRecord::Schema.define(version: 20161125040116) do
     t.datetime "updated_at",  null: false
   end
 
+  add_foreign_key "images", "projects"
 end

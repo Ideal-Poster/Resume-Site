@@ -28,6 +28,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "figaro"
 # Font-Awesome supplies icons and emoticons
 gem "font-awesome-rails"
+# Refile Image managment
+gem "refile", require: 'refile/rails', git: "https://github.com/refile/refile.git"
+#Refile Dependency
+gem "refile-mini_magick"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

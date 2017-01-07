@@ -1,4 +1,5 @@
 require 'rails_helper'
+require "refile/file_double"
 
 RSpec.describe Project, type: :model do
   let (:project) {
@@ -29,5 +30,6 @@ RSpec.describe Project, type: :model do
     no_note = project
     (expect(note).to be_valid) && (expect(no_note).to be_valid)
   end
+
 
 end
