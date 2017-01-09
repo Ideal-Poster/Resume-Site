@@ -9,15 +9,18 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" id="height-container">
   <%= yield %>
 </div>
 
 <p id="floater">Malcolm Gourdine &nbsp;&nbsp; <span style="color:#939393">Web Design + Development</span></p>
 
 <div id="sidebar" class="hidden-xs">
-  <%= image_tag("hand_logo.png", id:"hand-logo") %>
-  <p id="silver-hand">silver <br> hand</p>
+
+  <a href="<%= root_path %>" id="logo-link">
+    <%= image_tag("hand_logo.png", id:"hand-logo") %>
+    <p id="silver-hand">silver <br> hand</p>
+  </a>
 
   <ul id="nav" class="navigation nav-right affix">
     <li id="home">

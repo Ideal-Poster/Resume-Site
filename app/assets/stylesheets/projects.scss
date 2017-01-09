@@ -4,9 +4,67 @@
 
 .index-project {
   display: inline-block;
-  margin-top: 10px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.index-project a:hover {
+  text-decoration: none;
+  color: #942B72;
+}
+
+.index-project a:hover > .index-project-title {
+  border-bottom: 1px dotted #942B72;
 }
 
 .index-project-title {
   border-bottom: 1px dotted black;
+  margin-top: 10px;
+  padding-bottom: 3px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.index-project-date {
+  padding-top: 3px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#height-container {
+  min-height: 600px;
+}
+
+@media screen and (max-width: 767px) {
+  #portfolio { margin-left: 60px; }
+  #projects-container {
+    text-align: center;
+    margin-left: 60px;
+  }
+}
+
+.contact-style {
+  text-align: left;
+  width: 350px;
+  border: 1px solid white;
+}
+
+#contact-container {
+  text-align: center;
+  width: 350px;
+  margin: auto;
+}
+
+#contact-sub-container {
+  text-align: left;
+  margin-top: 100px;
+}
+
+#contact-name, #contact-email {
+  height: 30px;
+}
+
+#contact-body {
+  height: 120px;
 }

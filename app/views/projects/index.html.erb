@@ -1,28 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Projects</h1>
-
-<table>
-
-  <tbody>
-    <% @projects.each do |project| %>
-      <div class="index-project">
-
+<div id="projects-container">
+  <% @projects.each do |project| %>
+    <div class="index-project">
+      <a href="<%= project_path(project.id) %>">
         <%= attachment_image_tag(project.images.first, :file, :fill, 250, 140, class: "img-responsive" )%>
 
         <div class="index-project-title">
           <%= project.title %>
         </div>
 
-        <div class="index-project-description">
-          <%= project.description %>
+        <div class="index-project-date">
+          <%= project.created_at.strftime('%b %d %Y') %>
         </div>
-      </div>
-
-    <% end %>
-  </tbody>
-</table>
+      </a>
+    </div>
+  <% end %>
+</div>
 
 <br>
-
+<br>
+<br>
 <%= link_to 'New Project', new_project_path %>
