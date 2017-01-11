@@ -16,7 +16,7 @@
 .contact-style {
   text-align: left;
   width: 350px;
-  border: 1px solid grey;
+  border: 1px solid #333333;
   padding-left: 5px;
 }
 
@@ -41,4 +41,14 @@
 
 #logo-link:hover {
   color: red;
+}
+
+.contact-button {
+  background: #bd5e5e;
+  border: 1px solid #333333;
+}
+
+.contact-button:hover {
+  background: #cc5454;
+  color: #FFFFFF;
 }

@@ -4,7 +4,7 @@
   <% @projects.each do |project| %>
     <div class="index-project">
       <a href="<%= project_path(project.id) %>">
-        <%= attachment_image_tag(project.images.first, :file, :fill, 250, 140, class: "img-responsive" )%>
+        <%= attachment_image_tag(project.images.first, :file, :fill, 250, 155, class: "img-responsive" )%>
 
         <div class="index-project-title">
           <%= project.title %>
