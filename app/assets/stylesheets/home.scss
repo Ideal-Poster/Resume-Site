@@ -1,4 +1,9 @@
-body {
+.logo-pages:hover {
+  color: #38467C;
+}
+
+#logo-link:hover ~ .bg-home {
+  background: #DDEDF6;
 }
 
 #home-blurb {

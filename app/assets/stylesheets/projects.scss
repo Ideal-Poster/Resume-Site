@@ -1,6 +1,13 @@
 // Place all the styles related to the Projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.logo-projects:hover {
+  color: #7c4638;
+}
+
+#logo-link:hover ~ .bg-project {
+  background: #f9e0db;
+}
 
 .index-project {
   display: inline-block;
@@ -42,29 +49,4 @@
     text-align: center;
     margin-left: 60px;
   }
-}
-
-.contact-style {
-  text-align: left;
-  width: 350px;
-  border: 1px solid white;
-}
-
-#contact-container {
-  text-align: center;
-  width: 350px;
-  margin: auto;
-}
-
-#contact-sub-container {
-  text-align: left;
-  margin-top: 100px;
-}
-
-#contact-name, #contact-email {
-  height: 30px;
-}
-
-#contact-body {
-  height: 120px;
 }

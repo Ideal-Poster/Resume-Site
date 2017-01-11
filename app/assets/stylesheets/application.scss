@@ -23,8 +23,16 @@
    src: url('/assets/GreycliffCF-Bold.otf') format("truetype");
  }
 
- body {
-   background: #f9f9f9;
+ .bg {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   z-index: -40;
  }
 
 a {
@@ -55,6 +63,10 @@ a {
   z-index: 8;
 }
 
+#logo-link {
+  color: #333333;
+}
+
 #silver-hand {
   font-size: 36px;
   font-family: "Greycliff CF";
@@ -70,7 +82,7 @@ a {
 
 #sidebar {
   position: fixed;
-  background-color: #F9F9F9;
+  background-color: transparent;
   height: 100%;
   width: 80px;
   right: 0;
@@ -116,7 +128,7 @@ a {
 }
 
 #footer {
-  background-color: #373737;
+  background-color: #282828;
   width: 100%;
   height: 160px;
   color: #FFFFFF;
