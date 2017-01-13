@@ -2,6 +2,12 @@ require 'rails_helper'
 
 RSpec.describe ContactsController, type: :controller do
 
+  let(:admin) { Admin.create(email: "me@home.com", password: "whodini718") }
+
+  before(:example) do
+    sign_in admin
+  end
+
   describe "POST create" do
 
   let(:build) { FactoryGirl.build(:contact, name: "julissa", email: "email@example.com", body: "hello. Im cheap!") }

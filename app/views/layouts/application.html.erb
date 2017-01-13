@@ -19,6 +19,10 @@
       <%= yield %>
     </div>
 
+    <% if admin_signed_in? %>
+      <%= link_to "sign out", destroy_admin_session_path,method: :delete, id: "sign_out" %>
+    <% end %>
+
     <p id="floater">Malcolm Gourdine &nbsp;&nbsp; <span style="color:#939393">Web Design + Development</span></p>
 
     <div id="sidebar" class="hidden-xs">

@@ -21,6 +21,12 @@ require 'database_cleaner'
 
 RSpec.describe ProjectsController, type: :controller do
 
+  let(:admin) { Admin.create(email: "me@home.com", password: "whodini718") }
+
+  before(:example) do
+    sign_in admin
+  end
+
   # This should return the minimal set of attributes required to create a valid
   # Project. As you add validations to Project, be sure to
   # adjust the attributes here as well.
