@@ -88,4 +88,32 @@ describe "with and without admin role" do
     end
   end
 
+  describe "Pages" do
+    describe 'Home' do
+      it 'allows a user to view home page ' do
+        visit root_path
+        expect(current_path).to eq(root_path)
+      end
+
+      it 'allows logged in admin to view home page' do
+        log_in_as(admin)
+        visit root_path
+        expect(current_path).to eq(root_path)
+      end
+    end
+  end
+
+  describe "Contacts" do
+    it 'allows a user to view contact page' do
+      visit new_contact_path
+      expect(current_path).to eq(new_contact_path)
+    end
+
+    it 'allows logged in admin to view home page' do
+      log_in_as(admin)
+      visit new_contact_path
+      expect(current_path).to eq(new_contact_path)
+    end
+  end
+
 end
