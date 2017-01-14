@@ -18,6 +18,16 @@ def create_project
   click_button "create project"
 end
 
+def log_in_create_project
+  log_in_as(admin)
+  create_project
+end
+
+def login_create_project_logout
+  log_in_create_project
+  log_out
+end
+
 describe "with and without admin role" do
 
   let(:admin) { Admin.create!(email: "test@example.com", password: "password") }
@@ -32,9 +42,7 @@ describe "with and without admin role" do
       end
 
       it 'does not allow user to see the project create page if not logged in' do
-        log_in_as(admin)
-        create_project
-        log_out
+        login_create_project_logout
         visit(edit_project_path(1))
         expect(current_path).to eq(admin_session_path)
       end
@@ -42,16 +50,13 @@ describe "with and without admin role" do
 
     describe "Edit Page" do
       it 'allows a logged-in admin to view the projects edit page' do
-        log_in_as(admin)
-        create_project
+        log_in_create_project
         visit(edit_project_path(1))
         expect(current_path).to eq(edit_project_path(1))
       end
 
       it 'does not allow user to see the project edit page if not logged in' do
-        log_in_as(admin)
-        create_project
-        log_out
+        login_create_project_logout
         visit(edit_project_path(1))
         expect(current_path).to eq(admin_session_path)
       end
@@ -59,16 +64,13 @@ describe "with and without admin role" do
 
     describe 'Show Page' do
       it 'allows a user to view a project page' do
-        log_in_as(admin)
-        create_project
-        log_out
+        login_create_project_logout
         visit project_path(1)
         expect(current_path).to eq(project_path(1))
       end
 
       it 'allows logged-in admin to view a project page' do
-        log_in_as(admin)
-        create_project
+        log_in_create_project
         visit project_path(1)
         expect(current_path).to eq(project_path(1))
       end
