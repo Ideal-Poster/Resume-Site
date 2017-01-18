@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_admin!, except: [:new, :show]
+  # before_action :authenticate_admin!, except: [:new, :show]
 
   # GET /contacts
   # GET /contacts.json
@@ -31,6 +31,7 @@ class ContactsController < ApplicationController
       if @contact.save
         ContactMailer.contact_email(@contact).deliver_now
         format.html { redirect_to contacts_path, notice: 'Contact was successfully created.' }
+        format.js {}
         format.json { render :show, status: :created, location: @contact }
       else
         format.html { render :new }

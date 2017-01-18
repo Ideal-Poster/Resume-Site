@@ -1,0 +1,7 @@
+$(document).ready(function() {
+  return $("#new_contact").on("ajax:success", function(e, data, status, xhr) {
+    return $("#new_contact")[0].reset();
+  }).on("ajax:error", function(e, xhr, status, error) {
+    return $("#new_contact").append("<p>ERROR</p>");
+  });
+});
