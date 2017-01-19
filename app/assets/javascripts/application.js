@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require jquery
 //= require bootstrap-sprockets
+//= require jquery.validate
+//= require contacts
 //= require_tree .

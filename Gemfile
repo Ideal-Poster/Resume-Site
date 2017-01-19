@@ -33,6 +33,10 @@ gem 'refile', require: 'refile/rails', git: "https://github.com/refile/refile.gi
 gem 'refile-mini_magick'
 # User Authentication
 gem 'devise'
+# Client-Side validations
+gem 'jquery-validation-rails'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -14,14 +14,18 @@
 
     <div id="contact-sub-container">
       <div class="field">
-        <%= f.text_area :name,
+        <%= f.text_field :name,
+            required: true,
+            minlength: "2",
             class: "contact-style",
             id: "contact-name",
-            placeholder: "Name" %>
+            placeholder: "Name"%>
       </div>
 
       <div class="field">
-        <%= f.text_area :email,
+        <%= f.email_field :email,
+            required: true,
+            type: "email",
             class: "contact-style",
             id: "contact-email",
             placeholder: "Email" %>
@@ -29,13 +33,11 @@
 
       <div class="field">
         <%= f.text_area :body,
+            required: true,
+            minlength: "50",
             class: "contact-style",
             id: "contact-body",
             placeholder: "Message" %>
-      </div>
-
-      <div class="field hidden">
-        <%= f.text_area :comment %>
       </div>
 
       <div class="actions">
