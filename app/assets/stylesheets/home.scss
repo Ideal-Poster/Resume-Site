@@ -1,11 +1,3 @@
-.logo-pages:hover {
-  color: #38467C;
-}
-
-#logo-link:hover ~ .bg-home {
-  background: #DDEDF6;
-}
-
 #home-blurb {
   font-family: 'GreycliffCF';
   margin-bottom: 100px;
@@ -86,4 +78,12 @@
     font-size: 19px;
    }
 
+}
+
+body:hover > .bg-home {
+  background: #DDEDF6;
+}
+
+body:hover > .logo-pages {
+  color: #38467C;
 }

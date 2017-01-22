@@ -1,18 +1,6 @@
 // Place all the styles related to the Contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.logo-contacts:hover {
-  color: #605545;
-}
-
-#logo-link:hover {
-  color: #22326E;
-}
-
-#logo-link:hover ~ .bg-contact {
-  background: #EDEAE6;
-}
-
 .contact-style {
   text-align: left;
   width: 350px;
@@ -39,16 +27,15 @@
   height: 120px;
 }
 
-#logo-link:hover {
-  color: red;
-}
-
 .contact-button {
   background: #bd5e5e;
   border: 1px solid #333333;
 }
 
-.contact-button:hover {
-  background: #cc5454;
-  color: #FFFFFF;
+body:hover > .bg-contacts {
+  background: #EDEAE6;
+}
+
+body:hover > .logo-contacts {
+  color: #605545;
 }
