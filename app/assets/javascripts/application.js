@@ -18,10 +18,3 @@
 //= require jquery.validate
 //= require contacts
 //= require_tree .
-// jQuery(document).ready(function ($) {
-//   $("p#silver-hand").removeClass("logo-pages");
-//
-//   $("#hand-logo").click( function() {
-//     $("p#silver-hand").toggleClass("logo-pages");
-//   });
-// });
