@@ -40,10 +40,18 @@
             placeholder: "Message" %>
       </div>
 
-      <div class="actions">
-        <%= f.submit "Contact Malcolm",
-            class: "contact-button"%>
+      <div class="">
+        <div class="actions">
+          <%= f.submit "Contact Malcolm",
+              class: "contact-button"%>
+        </div>
+
+        <div id="email-external">
+          <a href="mailto:someone@example.com?Subject=Hello%20again">Malcolmgourdine@gmail.com</a>
+        </div>
       </div>
+
+
     </div>
 
   <% end %>
