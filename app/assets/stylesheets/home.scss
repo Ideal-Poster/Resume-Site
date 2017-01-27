@@ -30,8 +30,6 @@
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 10px;
-  // color: #9A2121;
-  // color: #B63434;
 }
 
 .skills-text {
@@ -45,10 +43,19 @@
 
 @media screen and (max-width: 767px) {
   #sidebar { display: none; }
-  #home-blurb { font-size: 24px; }
+  #home-blurb {
+    font-size: 24px;
+    margin-bottom: 70px;
+   }
   #img-caption, #skills { font-size: 18px; }
-  .skills-header { font-size: 20px; }
-  .skills-text { font-size: 14px;}
+  .skills-header {
+    font-size: 20px;
+  }
+  .skills-text { font-size: 14px; }
+  #skills {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -58,7 +65,6 @@
 @media screen and (min-width: 1200px) {
   #home-blurb {
     font-size: 31px;
-    margin-top: 40px;
     margin-bottom: 104px;
   }
   #img-caption{
@@ -86,4 +92,8 @@ body:hover > .bg-home {
 
 body:hover > .logo-pages {
   color: #38467C;
+}
+
+body:hover > nav div .navbar-toggle {
+  background: #FFFFFF;
 }

@@ -40,7 +40,7 @@ a {
 }
 
  .container {
-   margin-top: 100px;
+   margin-top: 110px;
  }
 
 #floater {
@@ -101,7 +101,7 @@ a {
   transform: rotate(90deg);
 }
 
-#nav li .active {
+#nav li .active, #mobile-menu div .active {
   color: #222222;
 }
 
@@ -173,14 +173,67 @@ a {
   #nav li a {
     font-size: 14px;
   }
+  .container {
+    margin-top: 115px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   #floater { left: 30px;}
+  #footer {
+    padding-left: 15px;
+
+  }
   #footer ul {
     width: 300px;
    }
    #footer ul li {
      margin-bottom: 10px;
-    }
+   }
+   #hand-logo {
+     height: 45px;
+     right: 32px;
+     top: 32px;
+     position: absolute;
+   }
+
+   #mobile-menu {
+     margin-bottom: 50px;
+   }
+}
+
+#mobile-menu {
+  width: 100%;
+  padding: 0px 16px 0px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Greycliff CF";
+  margin-top: 10px;
+}
+
+#mobile-menu div a {
+  color: #939393;
+}
+
+#mobile-menu div a:hover {
+  text-decoration: none;
+  background: none;
+  color: #222222;
+}
+
+.right {
+  float:right;
+  width:100px;
+  text-align: right;
+}
+
+.left {
+  float:left;
+  width:100px;
+}
+
+.center {
+  margin:0 auto;
+  width:65px;
+  text-align: left;
 }
