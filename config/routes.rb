@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :admins
+  devise_for :admins, controllers: { registrations: "registrations" }
   resources :projects
   resources :contacts
   get '/pages/:page' => 'pages#show'
