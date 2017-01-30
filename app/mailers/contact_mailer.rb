@@ -1,8 +1,8 @@
 class ContactMailer < ApplicationMailer
-  default from: "malcolmgourdine@gmail.com"
+  default from: "malcolm@silverhand.design"
 
   def contact_email(contact)
     @contact = contact
-    mail(to: 'malcolmgourdine@gmail.com', subject: "Customer Request from #{ @contact.name }")
+    mail(to: 'malcolm@silverhand.design', subject: "Customer Request from #{ @contact.name }")
   end
 end
