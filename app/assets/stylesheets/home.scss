@@ -1,89 +1,5 @@
-#home-blurb {
-  font-family: 'GreycliffCF';
-  margin-bottom: 100px;
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-#img-caption {
-  font-size: 20px;
-  font-family: "Greycliff CF";
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 14px;
-}
-
-#skills {
-  border-bottom: 1.8px solid #333333;
-  padding-bottom: 12px;
-  font-size: 20px;
-  font-family: "Greycliff CF";
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: -5px;
-}
-
-.skills-header {
-  font-size: 24px;
-  font-family: "Greycliff CF";
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 10px;
-}
-
-.skills-text {
-  font-size: 16px;
-  font-family: "Greycliff CF";
-  font-weight: bold;
-  line-height: 0.938;
-  top: 20px;
-}
-
-
-@media screen and (max-width: 767px) {
-  #sidebar { display: none; }
-  #home-blurb {
-    font-size: 24px;
-    margin-bottom: 70px;
-   }
-  #img-caption, #skills { font-size: 18px; }
-  .skills-header {
-    font-size: 20px;
-  }
-  .skills-text { font-size: 14px; }
-  #skills {
-    margin-top: 50px;
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #home-blurb { font-size: 26px; }
-}
-
-@media screen and (min-width: 1200px) {
-  #home-blurb {
-    font-size: 31px;
-    margin-bottom: 104px;
-  }
-  #img-caption{
-    margin-bottom: 15px;
-  }
-  #img-caption, #skills {
-    font-size: 24px;
-  }
-  #skills {
-    margin-bottom: 10px;
-    padding-bottom: 15px;
-  }
-  .skills-header {
-    font-size: 29px;
-  }
-  .skills-text {
-    font-size: 19px;
-   }
-
+body:hover > #footer {
+  background: #cce0ec;
 }
 
 body:hover > .bg-home {
@@ -96,4 +12,29 @@ body:hover > .logo-pages {
 
 body:hover > nav div .navbar-toggle {
   background: #FFFFFF;
+}
+
+#img-caption {
+  margin-bottom: 14px;
+}
+
+#skills {
+  border-bottom: 1.8px solid #333333;
+  padding-bottom: 12px;
+  margin-bottom: -5px;
+}
+
+#design, #development {
+  margin-bottom: 13px;
+}
+
+@media screen and (max-width: 767px) {
+  #sidebar { display: none; }
+}
+
+@media screen and (min-width: 1200px) {
+  #img-caption{ margin-bottom: 15px; }
+  #skills {
+    // padding-bottom: 15px;
+  }
 }

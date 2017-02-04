@@ -14,9 +14,9 @@
 
     <div class="container" id="height-container">
       <div id="mobile-menu" class="hidden-sm hidden-md hidden-lg hidden-xl">
-       <div class="left"><%= link_to 'Home', root_path, ({class: "active"} if current_page?(root_path))  %></div>
-       <div class="right"><%= link_to 'Contact', new_contact_path, ({class: "active"} if current_page?(new_contact_path))  %></div>
-       <div class="center"><%= link_to 'Portfolio', projects_path, ({class: "active"} if current_page?(projects_path))  %></div>
+       <div id="left"><%= link_to 'Home', root_path, ({class: "active"} if current_page?(root_path))  %></div>
+       <div id="right"><%= link_to 'Contact', new_contact_path, ({class: "active"} if current_page?(new_contact_path))  %></div>
+       <div id="center"><%= link_to 'Portfolio', projects_path, ({class: "active"} if current_page?(projects_path))  %></div>
       </div>
       <%= yield %>
     </div>

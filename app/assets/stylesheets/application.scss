@@ -23,25 +23,54 @@
    src: url('/assets/GreycliffCF-Bold.otf') format("truetype");
  }
 
- .bg {
-   position: fixed;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   z-index: -1;
-   transition: background .28s ease;
- }
-
-a {
-  text-decoration: none;
+h1, h2, #silver-hand, .page-text {
+  font-family: 'GreycliffCF';
 }
 
- .container {
-   margin-top: 110px;
+h1, h2, #silver-hand {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+p {
+  font-weight: 100;
+}
+
+.page-text {
+  font-size: 15px;
+  font-weight: 100;
  }
+
+#bg, #footer {
+  -webkit-transition: background .4s ease;
+  -moz-transition: background .4s ease;
+  -o-transition: background .4s ease;
+  transition: background .4s ease;
+}
+
+ #bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+ }
+
+.container {
+  margin-top: 110px;
+}
 
 #floater {
   font-size: 10px;
@@ -65,8 +94,6 @@ a {
 
 #silver-hand {
   font-size: 36px;
-  font-family: "Greycliff CF";
-  font-weight: bold;
   line-height: 0.833;
   position: fixed;
   right: 60px;
@@ -74,6 +101,10 @@ a {
   width: 61px;
   height: 57px;
   z-index: 13;
+}
+
+#home-blurb {
+  margin-bottom: 100px;
 }
 
 #sidebar {
@@ -96,8 +127,8 @@ a {
 #nav li {
   margin-top: 64px;
   font-weight: 100;
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -124,7 +155,7 @@ a {
 }
 
 #footer {
-  background-color: #282828;
+  background-color: #F3F3F3;
   width: 100%;
   min-height: 160px;
   color: #FFFFFF;
@@ -132,9 +163,9 @@ a {
 }
 
 #footer-text {
-  margin-top:35px;
-  font-size: 14px;
-  color: #757575;
+  margin-top:40px;
+  font-size: 15px;
+  color: #333333;
   width: 90.5%;
   padding-bottom: 20px;
   border-bottom: 1px solid #757575;
@@ -151,12 +182,11 @@ a {
   margin-right: 140px;
   font-size: 15px;
   font-weight: 100;
-  font-family: "Greycliff CF";
   letter-spacing: 1px;
 }
 
 #footer .container ul li a {
-  color: #fdfdfd;
+  color: #333333;
 }
 
 #footer .container ul li a:hover {
@@ -165,49 +195,11 @@ a {
   text-decoration: none;
 }
 
-.greycliff {
-  font-family: 'GreycliffCF';
-}
-
-@media screen and (min-width: 1200px) {
-  #nav li a {
-    font-size: 14px;
-  }
-  .container {
-    margin-top: 115px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #floater { left: 30px;}
-  #footer {
-    padding-left: 15px;
-
-  }
-  #footer ul {
-    width: 300px;
-   }
-   #footer ul li {
-     margin-bottom: 10px;
-   }
-   #hand-logo {
-     height: 45px;
-     right: 32px;
-     top: 32px;
-     position: absolute;
-   }
-
-   #mobile-menu {
-     margin-bottom: 50px;
-   }
-}
-
 #mobile-menu {
   width: 100%;
   padding: 0px 16px 0px 16px;
   font-size: 15px;
-  font-weight: 500;
-  font-family: "Greycliff CF";
+  font-weight: 400;
   margin-top: 10px;
 }
 
@@ -221,19 +213,45 @@ a {
   color: #222222;
 }
 
-.right {
+#right {
   float:right;
   width:100px;
   text-align: right;
 }
 
-.left {
+#left {
   float:left;
   width:100px;
 }
 
-.center {
+#center {
   margin:0 auto;
   width:65px;
   text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  #floater { left: 30px; }
+  #footer { padding-left: 15px; }
+  #footer ul { width: 300px; }
+  #footer ul li { margin-bottom: 10px; }
+  #hand-logo {
+    height: 45px;
+    right: 32px;
+    top: 32px;
+    position: absolute;
+  }
+  #mobile-menu { margin-bottom: 50px; }
+}
+
+@media screen and (min-width: 1200px) {
+  .container { margin-top: 115px; }
+  h1 { font-size: 30px; }
+  h2 { font-size: 24px; }
+  #home-blurb {
+    width: 900px;
+    margin-bottom: 115px;
+  }
+  .page-text { font-size: 18px; }
+  #nav li a { font-size: 14px; }
 }
