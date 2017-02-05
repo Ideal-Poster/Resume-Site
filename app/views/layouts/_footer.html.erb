@@ -1,0 +1,17 @@
+<% if params[:controller] == 'pages' %>
+  <div id="pages-footer" class="footer">
+    <%= render "/layouts/footer_contents"%>
+  </div>
+<% end %>
+
+<% if params[:controller] == 'projects' %>
+  <div id="projects-footer" class="footer">
+    <%= render "/layouts/footer_contents"%>
+  </div>
+<% end %>
+
+<% if params[:controller] == 'contacts' %>
+  <div id="contact-footer" class="footer">
+    <%= render "/layouts/footer_contents"%>
+  </div>
+<% end %>

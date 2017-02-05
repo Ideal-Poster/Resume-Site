@@ -45,10 +45,7 @@ body:hover > .logo-contacts {
   margin-bottom: 10px;
 }
 
-.description {
-  margin: auto;
-  max-width: 550px;
-}
+
 
 #email-external a {
   color: #939393;
@@ -68,4 +65,30 @@ body:hover > .logo-contacts {
   background: none;
   text-decoration: none;
   color: #222222;
+}
+
+body:hover > #contact-footer {
+  background: #e1dcd6;
+}
+
+.description {
+  margin: auto;
+  // max-width: 550px;
+}
+
+@media screen and (min-width: 1200px) {
+  .description{
+    max-width: 680px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .description{
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .description{
+  }
 }

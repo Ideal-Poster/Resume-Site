@@ -1,6 +1,18 @@
 // Place all the styles related to the Projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body:hover > .bg-projects {
+  background: #f9e0db;
+}
+
+body:hover > .logo-projects {
+  color: #7c4638;
+}
+
+body:hover > #projects-footer {
+  background: #f0d2cb;
+}
+
 .index-project {
   display: inline-block;
   margin-right: 60px;
@@ -41,12 +53,4 @@
     text-align: center;
     margin-left: 60px;
   }
-}
-
-body:hover > .bg-projects {
-  background: #f9e0db;
-}
-
-body:hover > .logo-projects {
-  color: #7c4638;
 }
