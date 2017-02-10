@@ -19,12 +19,26 @@ body:hover > nav div .navbar-toggle {
 }
 
 #skills {
+  padding-right: 0px;
   border-bottom: 1.8px solid #333333;
   padding-bottom: 14px;
 }
 
 #design, #development {
   margin-top: 4px;
+  font-weight: 500;
+  width: 150px;
+  padding: none;
+}
+
+#info-list li {
+  font-family: 'Libre Franklin', sans-serif;
+  list-style: none;
+  text-align: left;
+  margin-left: -40px;
+  margin-bottom: 18px;
+  font-weight: 200;
+  line-height: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -32,11 +46,16 @@ body:hover > nav div .navbar-toggle {
 }
 
 @media screen and (min-width: 1200px) {
+  #info-list li {
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 22px;
+  }
   #img-caption { margin-bottom: 16px; }
   #skills { padding-bottom: 16px; }
 
   #design, #development {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-top: 8px;
   }
 }

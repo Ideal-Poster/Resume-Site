@@ -1,7 +1,12 @@
 $(document).ready(function() {
   return $("#new_contact").on("ajax:success", function(e, data, status, xhr) {
+    if ($("#thank-you").length == 0) {
+      $("#new_contact").append("<h2 id=\"thank-you\">Thank you for your message.<br>I'll get back to you soon.</h2>")
+    }
     return $("#new_contact")[0].reset();
   }).on("ajax:error", function(e, xhr, status, error) {
-    return $("#new_contact").append("<p>ERROR</p>");
+    if ($("#error").length == 0) {
+      return $("#new_contact").append("<h2 id=\"error\">Your message was not sent. Please use the link next to the contact button.</h2>");
+    }
   });
 });

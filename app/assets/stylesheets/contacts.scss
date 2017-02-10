@@ -42,10 +42,7 @@ body:hover > .logo-contacts {
 
 #lets-make-something {
   text-align: center;
-  margin-bottom: 10px;
 }
-
-
 
 #email-external a {
   color: #939393;
@@ -55,6 +52,10 @@ body:hover > .logo-contacts {
   display: inline-block;
   margin-left: 40px;
   text-decoration: none;
+}
+
+#thank-you {
+  margin-top: 10px;
 }
 
 .actions {
@@ -73,7 +74,7 @@ body:hover > #contact-footer {
 
 .description {
   margin: auto;
-  // max-width: 550px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
