@@ -12,9 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery.validate
 //= require contacts
 //= require_tree .
+
+$(document).ready(function(){
+    $("#home-blurb").fadeTo(1000, 0.4);
+});
