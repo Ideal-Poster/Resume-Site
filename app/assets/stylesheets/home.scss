@@ -20,18 +20,19 @@ body:hover > nav div .navbar-toggle {
 
 #skills {
   padding-right: 0px;
-  border-bottom: 1.8px solid #333333;
+  // border-bottom: 1.8px solid #333333;
   padding-bottom: 14px;
 }
 
 #design, #development {
-  margin-top: 4px;
+  margin-top: 15px;
   font-weight: 500;
   width: 150px;
   padding: none;
 }
 
 #info-list li {
+  font-size: 13.5px;
   font-family: 'Libre Franklin', sans-serif;
   list-style: none;
   text-align: left;
@@ -41,21 +42,28 @@ body:hover > nav div .navbar-toggle {
   line-height: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  #sidebar { display: none; }
+#portfolio-button {
+  width: 120px;
+  height: 80px;
+  background: #7C4638;
+  margin-top:25px;
+  border-radius: 3.5px;
 }
 
-@media screen and (min-width: 1200px) {
-  #info-list li {
-    margin-bottom: 22px;
-    font-size: 16px;
-    line-height: 22px;
-  }
-  #img-caption { margin-bottom: 16px; }
-  #skills { padding-bottom: 16px; }
+#hand-wash {
+  margin-top: 25px;
+  border-radius: 0.5px;
+  border: 2px solid #333333;
+  height:90px;
+  width: 160px;
+  padding-left: 4px;
 
-  #design, #development {
-    margin-bottom: 15px;
-    margin-top: 8px;
-  }
+}
+
+#hand-wash h2 {
+margin-top: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  #sidebar { display: none; }
 }

@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery.validate
@@ -20,5 +19,11 @@
 //= require_tree .
 
 $(document).ready(function(){
-    $("#home-blurb").fadeTo(1000, 0.4);
+  $("#home-blurb").fadeTo(900, 1);
+  $("#img-caption").delay(300).fadeTo(900,1)
+  $("#skills").delay(400).fadeTo(900,1)
+  $("#development-fade").delay( (Math.floor(Math.random() * 1300) + 850) ).fadeTo(550, 1);
+  $("#about-fade").delay( (Math.floor(Math.random() * 1300) + 850) ).fadeTo(550, 1);
+  $("#design-fade").delay( (Math.floor(Math.random() * 1300) + 850) ).fadeTo(550, 1);
+  $("#info-fade").delay( (Math.floor(Math.random() * 1300) + 850) ).fadeTo(550, 1);
 });

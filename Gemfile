@@ -36,12 +36,6 @@ gem 'devise'
 # Client-Side validations
 gem 'jquery-validation-rails'
 
-gem 'capistrano'
-gem 'capistrano-rails'
-gem 'capistrano-passenger'
-gem 'capistrano-rvm'
-
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

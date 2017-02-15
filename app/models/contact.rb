@@ -8,5 +8,4 @@ class Contact < ActiveRecord::Base
   def name=(name)
     return write_attribute(:name, name_case(name) )
   end
-
 end

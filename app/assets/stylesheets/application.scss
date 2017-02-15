@@ -22,7 +22,15 @@
    font-family: 'GreycliffCF';
    src: url('/assets/GreycliffCF-Bold.otf') format("truetype");
  }
-@import url('https://fonts.googleapis.com/css?family=Alice|Libre+Franklin');
+ @font-face {
+   font-family: 'LibreFranklin';
+   src: url('/assets/LibreFranklin-Regular.ttf') format("truetype");
+ }
+ @font-face {
+   font-family: 'Alice';
+   src: url('/assets/Alice-Regular.ttf') format("truetype");
+ }
+
  ::selection {
   background: #ffb7b7; /* WebKit/Blink Browsers */
 }
@@ -30,7 +38,18 @@
   background: #ffb7b7; /* Gecko Browsers */
 }
 
-#home-blurb {
+#height-container {
+  min-height: 600px;
+}
+
+#home-blurb,
+#img-caption,
+#skills,
+#development-fade,
+#about-fade,
+#design-fade,
+#info-fade,
+#contact-fade {
   opacity: 0;
 }
 
@@ -58,17 +77,17 @@ p {
 
 .page-text {
   font-size: 16px;
-  font-family: 'Alice', serif;
+  font-family: 'Alice';
   font-weight: 300;
   line-height: 19px;
   letter-spacing: 0.05px;
  }
 
 #bg, .footer {
-  -webkit-transition: background .4s ease;
-  -moz-transition: background .4s ease;
-  -o-transition: background .4s ease;
-  transition: background .4s ease;
+  -webkit-transition: background .26s ease;
+  -moz-transition: background .26s ease;
+  -o-transition: background .26s ease;
+  transition: background .26s ease;
 }
 
  #bg {
@@ -119,6 +138,7 @@ p {
 
 #home-blurb {
   margin-bottom: 100px;
+  max-width: 860px;
 }
 
 #sidebar {
@@ -226,7 +246,7 @@ p {
   font-size: 15px;
   font-weight: 400;
   margin-top: 10px;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'LibreFranklin';
 
 }
 
@@ -272,24 +292,20 @@ p {
     position: absolute;
   }
   #mobile-menu { margin-bottom: 50px; }
+  #development, #design, #about, #info { margin-top: 25px; }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer .container ul li {
-    margin-right: 54px;
-  }
-  .container { margin-top: 115px; }
-  h1 { font-size: 30px; }
-  h2 { font-size: 24px; }
-  .page-text { line-height: 22px;;}
-  #floater { font-size: 12.2px; }
-  #home-blurb {
-    width: 900px;
-    margin-bottom: 115px;
-  }
-  .page-text { font-size: 18px; }
-  #nav li a { font-size: 15px; }
-  #footer-text, .footer .container ul li {
-    font-size: 18px;
-  }
-}
+// @media screen and (min-width: 1200px) {
+//   .footer .container ul li { margin-right: 53px; }
+//   .container { margin-top: 115px; }
+//   h1 { font-size: 28px; }
+//   h2 { font-size: 22px; }
+//   .page-text {
+//     line-height: 20px;
+//     font-size: 14px;
+//   }
+//   #floater { font-size: 12px; }
+//   .page-text { font-size: 18px; }
+//   #nav li a { font-size: 14.5px; }
+//   #footer-text, .footer .container ul li {  font-size: 16px; }
+// }
