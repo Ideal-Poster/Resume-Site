@@ -295,17 +295,19 @@ p {
   #development, #design, #about, #info { margin-top: 25px; }
 }
 
-// @media screen and (min-width: 1200px) {
-//   .footer .container ul li { margin-right: 53px; }
-//   .container { margin-top: 115px; }
-//   h1 { font-size: 28px; }
-//   h2 { font-size: 22px; }
-//   .page-text {
-//     line-height: 20px;
-//     font-size: 14px;
-//   }
-//   #floater { font-size: 12px; }
-//   .page-text { font-size: 18px; }
-//   #nav li a { font-size: 14.5px; }
-//   #footer-text, .footer .container ul li {  font-size: 16px; }
-// }
+@media screen and (min-width: 1200px) {
+  .footer .container ul li { margin-right: 53px; }
+  .container { margin-top: 110px; }
+  h1 { font-size: 27px; }
+  h2 { font-size: 21px; }
+  .page-text {
+    line-height: 20px;
+    font-size: 13px;
+  }
+  .page-text {
+    font-size: 17px;
+    margin-top: 12px;
+   }
+  #nav li a { font-size: 14.5px; }
+  #footer-text, .footer .container ul li {  font-size: 16px; }
+}
