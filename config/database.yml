@@ -80,6 +80,10 @@ test:
 #
 production:
   <<: *default
-  database: resume_production
+  adapter: postgresql
+  database: resume-database
   username: malcolmgourdine
   password: <%= ENV['STATIC_DATABASE_PASSWORD'] %>
+  encoding: unicode
+  pool: 5
+  url: <%= ENV['POSTGRESQL_URL'] %>
